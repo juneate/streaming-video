@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: black;
+        color:#CCCCCC; 
+      }
+      #c2 {
+        background-image: url('https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/bears/pmuipaf4jmbbzrw77ntj');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      div {
+        /* float: left; */
+        border :1px solid #444444;
+        padding:10px;
+        margin: 10px;
+        background:#3B3B3B;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <video id="video" width="320" height="180" controls="true"></video>
+      <ul>
+        <li>
+          <label for="r">r</label>
+          <input type="range" name="r" id="r" min="0" max="255">
+          <output for="r"></output>
+        </li>
+  
+        <li>
+          <label for="g">g</label>
+          <input type="range" name="g" id="g" min="0" max="255">
+          <output for="g"></output>
+        </li>
+        
+        <li>
+          <label for="b">b</label>
+          <input type="range" name="b" id="b" min="0" max="255">
+          <output for="b"></output>
+        </li>
+        
+        <li>
+          <label for="range">range</label>
+          <input type="range" name="range" id="range" min="0" max="255">
+          <output for="range"></output>
+        </li>
+      </ul>
+    </div>
+    
+    <div>
+      <canvas id="c1" width="320" height="180"></canvas>
+      <canvas id="c2" width="320" height="180"></canvas>
+    </div>
+  <script type="text/javascript" src="processor.js"></script>
+  </body>
+</html>
